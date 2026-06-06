@@ -1,0 +1,44 @@
+{
+  "geode": "v3.0.0",
+  "version": "1.0.0",
+  "id": "nathou123058.gesture_control",
+  "name": "Gesture Control",
+  "developer": "Nathou123058",
+  "description": "Control Geometry Dash with hand gestures using your webcam. Lightweight and optimized for smooth gameplay.",
+  "settings": {
+    "enable_gestures": {
+      "name": "Enable Gesture Control",
+      "description": "Toggle gesture recognition on/off",
+      "type": "bool",
+      "default": true
+    },
+    "left_hand_action": {
+      "name": "Left Hand Gesture",
+      "description": "Action for left hand gesture",
+      "type": "string",
+      "default": "jump",
+      "allowed": ["jump", "none"]
+    },
+    "right_hand_action": {
+      "name": "Right Hand Gesture",
+      "description": "Action for right hand gesture",
+      "type": "string",
+      "default": "jump",
+      "allowed": ["jump", "none"]
+    },
+    "confidence_threshold": {
+      "name": "Detection Confidence",
+      "description": "Minimum confidence for gesture detection (0.0-1.0)",
+      "type": "float",
+      "default": 0.7,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "webcam_index": {
+      "name": "Webcam Index",
+      "description": "Which camera to use (0 = default)",
+      "type": "int",
+      "default": 0
+    }
+  }
+}
